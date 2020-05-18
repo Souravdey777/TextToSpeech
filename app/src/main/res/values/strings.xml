@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Text To Speech (TTS)</string>
+    <string name="text_here">Text here...</string>
+    <string name="language">Language:</string>
+    <string name="volume">Volume</string>
+    <string name="speed">Speed</string>
+    <string name="click_here">Click Here...</string>
+    <string-array name="languages">
+        <item>English(US)</item>
+        <item>English(UK)</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Italian</item>
+        <item>Russian</item>
+        <item>Hindi</item>
+    </string-array>
+
+    <!--AdMob ad units IDs -->
+    <string name="banner_footer1">ca-app-pub-7553866847248714/8932538980</string>
+    <string name="interstitial_fullscreen">ca-app-pub-7553866847248714/8792938186</string>
+</resources>

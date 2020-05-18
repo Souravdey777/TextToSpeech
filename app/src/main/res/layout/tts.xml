@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:padding="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:id="@+id/option">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language:"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/spinner"
+            tools:targetApi="lollipop" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Volume"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="100dp"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText,RelativeOverlap,RtlHardcoded" />
+        <SeekBar
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/volumeBar"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/speed"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@id/volumeBar"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+        <SeekBar
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@id/volumeBar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/speedBar"
+            tools:ignore="RtlHardcoded" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Pitch"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@id/speedBar"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText,RelativeOverlap,RtlHardcoded" />
+
+        <SeekBar
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@id/speedBar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/pitchBar"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:gravity="center"
+        android:hint="Text Here..."
+        android:layout_below="@id/option"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/ic_lock_silent_mode_off"
+        android:backgroundTint="@android:color/white"
+        android:id="@+id/spk"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="180dp"
+        tools:targetApi="lollipop" />
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/delete"
+        android:backgroundTint="@android:color/white"
+        android:id="@+id/del"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="185dp"
+        tools:targetApi="lollipop" />
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/copy"
+        android:backgroundTint="@android:color/white"
+        android:id="@+id/copy"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="185dp"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/ic_btn_speak_now"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:id="@+id/speech_to_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
+        tools:targetApi="lollipop"
+        tools:ignore="RtlHardcoded" />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_footer1"
+        />
+
+</RelativeLayout>
